@@ -1,26 +1,97 @@
 
-
-.header-top{
-    background: grey;
-    color: #FFF;
-    text-transform: uppercase;
-    font-size: 13px;
-    line-height: 16px;
-    padding: 20px 0 23px;
-    letter-spacing: 0.7px;
+html {
+    box-sizing: border-box;
 }
 
-.header-btm{
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    z-index: 100;
-    background: rgb(255, 255, 255);
-    padding: 22px 0px;
+*,
+::before,
+::after {
+  box-sizing: inherit;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;  /*Убирает подчеткивание в ссылок*/
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
 .container{
+    width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
+        /* Header start */
+.header-top{
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    background-color: #222222;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.7px;
+    padding-top: 20px;
+    padding-bottom: 23px;
+}
+
+
+
+.header-contacts:not(:last-child) {
+    margin-right: 25px;    
+}
+.link {
+    color: #FFF;
+}
+.link:hover,
+.link:focus {
+    color: #2196F3;
+}
+.time {
+    margin-left: auto;
+}
+
+.header-btm .link {
+    color: black;
+}
+.header-btm .link:hover,
+.header-btm .link:focus {
+    color: #2196F3;
+}
+
+
+.header-btm{
+    display: flex;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 22px 0px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+/* Header end */
